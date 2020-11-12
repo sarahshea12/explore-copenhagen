@@ -6,9 +6,9 @@ function CovidData(props) {
         console.log(response.data.response[16])
     });
     return (
-    <div>
-        <h1>hello</h1>
-    </div>
+        <div>
+            <h1>Covid</h1>
+        </div>
     )
 }
 
