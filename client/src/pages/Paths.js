@@ -1,16 +1,16 @@
 import React from "react";
-import TrashMap from "../components/TrashMap";
+import BikeMap from "../components/BikeMap";
 import Grid from "@material-ui/core/Grid";
 
-function TrashData(){
+function Paths(){
     return (
         <Grid container spacing={2}>
             <Grid item xs={12}>
-                <TrashMap />
+                <BikeMap />
             </Grid>
         </Grid>
         
     )
 }
 
-export default TrashData;
+export default Paths;

@@ -7,7 +7,7 @@ function Forecast(props) {
     });
     return (
         <div>
-            <h1>Forecast</h1>
+            
         </div>
     )
 }

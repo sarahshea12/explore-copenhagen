@@ -4,6 +4,7 @@ import CovidData from "./pages/CovidData";
 import Forecast from "./pages/Forecast";
 import Nav from "./components/Navbar";
 import TrashData from "./pages/TrashData";
+import Paths from "./pages/Paths";
 
 function App() {
   return (
@@ -16,6 +17,10 @@ function App() {
           </Route>
           <Route exact path="/waste" render={() => (
             <TrashData />
+          )}>
+          </Route>
+          <Route exact path="/paths" render={() => (
+            <Paths />
           )}>
           </Route>
         </Switch>

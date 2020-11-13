@@ -8,8 +8,7 @@ function CovidData(props) {
     });
     return (
         <div>
-            <h1>Covid</h1>
-            <Button color="primary">Button</Button>
+            
         </div>
     )
 }

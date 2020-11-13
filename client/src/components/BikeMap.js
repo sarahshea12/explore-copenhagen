@@ -4,13 +4,13 @@ import "mapbox-gl/dist/mapbox-gl.css";
 
 const MAPBOX_TOKEN = "pk.eyJ1Ijoic2FyYWhzaGVhMTIiLCJhIjoiY2toZmxuaDM4MHFvdzJwcXBxbDd0cnF0MyJ9.kkp2ulqhOdhgwysy05DlOA"
 
-function TrashMap(){
+function BikeMap(){
     const [viewport, setViewport] = useState({
         width: 600,
         height: 600,
         latitude: 55.6761,
         longitude: 12.5683,
-        zoom: 12
+        zoom: 11
     })
 
     return (
@@ -19,10 +19,10 @@ function TrashMap(){
         width="100vw"
         height="100vh"
         mapboxApiAccessToken={MAPBOX_TOKEN}
-        mapStyle="mapbox://styles/sarahshea12/ckhfk1inz09t019n961j3qsab"
+        mapStyle="mapbox://styles/sarahshea12/ckhfv216z0v8619outpga50dv"
         onViewportChange = {nextViewport => setViewport(nextViewport)}
         />
     )
 }
 
-export default TrashMap;
+export default BikeMap;
