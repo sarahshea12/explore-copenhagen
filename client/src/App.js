@@ -12,7 +12,7 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/" render={() => (
-            <Forecast />
+            <Paths />
           )}>
           </Route>
           <Route exact path="/waste" render={() => (

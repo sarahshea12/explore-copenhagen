@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactMapGL from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
-const MAPBOX_TOKEN = "pk.eyJ1Ijoic2FyYWhzaGVhMTIiLCJhIjoiY2toZmxuaDM4MHFvdzJwcXBxbDd0cnF0MyJ9.kkp2ulqhOdhgwysy05DlOA"
+const MAPBOX_TOKEN = process.env.MAPBOX_TOKEN
 
 function BikeMap(){
     const [viewport, setViewport] = useState({
