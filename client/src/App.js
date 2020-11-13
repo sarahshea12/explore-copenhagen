@@ -5,6 +5,7 @@ import Forecast from "./pages/Forecast";
 import Nav from "./components/Navbar";
 import TrashData from "./pages/TrashData";
 import Paths from "./pages/Paths";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/" render={() => (
-            <Paths />
+            <Home />
           )}>
           </Route>
           <Route exact path="/waste" render={() => (
