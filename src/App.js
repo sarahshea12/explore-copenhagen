@@ -12,7 +12,7 @@ function App() {
     <Router>
         <Nav />
         <Switch>
-          <Route exact path="/explore-copenhagen" render={() => (
+          <Route exact path="/" render={() => (
             <Home />
           )}>
           </Route>
