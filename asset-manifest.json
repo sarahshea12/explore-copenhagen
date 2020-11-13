@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/explore-copenhagen/static/js/main.62f53330.chunk.js",
+    "main.js.map": "/explore-copenhagen/static/js/main.62f53330.chunk.js.map",
+    "runtime-main.js": "/explore-copenhagen/static/js/runtime-main.89e24b1d.js",
+    "runtime-main.js.map": "/explore-copenhagen/static/js/runtime-main.89e24b1d.js.map",
+    "static/css/2.1ff209b0.chunk.css": "/explore-copenhagen/static/css/2.1ff209b0.chunk.css",
+    "static/js/2.4c2f838e.chunk.js": "/explore-copenhagen/static/js/2.4c2f838e.chunk.js",
+    "static/js/2.4c2f838e.chunk.js.map": "/explore-copenhagen/static/js/2.4c2f838e.chunk.js.map",
+    "index.html": "/explore-copenhagen/index.html",
+    "static/css/2.1ff209b0.chunk.css.map": "/explore-copenhagen/static/css/2.1ff209b0.chunk.css.map",
+    "static/js/2.4c2f838e.chunk.js.LICENSE.txt": "/explore-copenhagen/static/js/2.4c2f838e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.89e24b1d.js",
+    "static/css/2.1ff209b0.chunk.css",
+    "static/js/2.4c2f838e.chunk.js",
+    "static/js/main.62f53330.chunk.js"
+  ]
+}
