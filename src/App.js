@@ -16,7 +16,7 @@ function App() {
             <Home />
           )}>
           </Route>
-          <Route exact path="/waste" render={() => (
+          <Route exact path="/explore-copenhagen/waste" render={() => (
             <TrashData />
           )}>
           </Route>
