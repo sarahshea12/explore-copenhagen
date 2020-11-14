@@ -1,8 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CovidData from "./pages/CovidData";
 import Forecast from "./pages/Forecast";
-import Nav from "./components/Navbar";
+import Nav from "./components/Navbar/Navbar";
 import TrashData from "./pages/TrashData";
 import Paths from "./pages/Paths";
 import Home from "./pages/Home";
