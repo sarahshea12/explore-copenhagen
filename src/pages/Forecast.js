@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Chart from "../components/Chart";
 import API from "../utils/API";
 
 function Forecast(props) {
@@ -6,9 +7,7 @@ function Forecast(props) {
         console.log(response.data);
     });
     return (
-        <div>
-            
-        </div>
+        <Chart />
     )
 }
 

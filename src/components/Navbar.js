@@ -28,7 +28,7 @@ function Nav(){
                 <Link className="link" to="paths">
                     <BikeIcon />
                 </Link>
-                <Link className="link" to="/">
+                <Link className="link" to="/weather">
                     <CloudIcon />
                 </Link>
             </Grid>

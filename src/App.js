@@ -30,6 +30,11 @@ function App() {
           )}>
           </Route>
 
+          <Route exact path="/weather" render={() => (
+            <Forecast />
+          )}>
+          </Route>
+
         </Switch>
 
     </Router>
