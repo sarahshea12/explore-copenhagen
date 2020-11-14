@@ -5,34 +5,39 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import HomeIcon from "@material-ui/icons/Home";
 import BikeIcon from "@material-ui/icons/DirectionsBike";
 import CloudIcon from "@material-ui/icons/Cloud";
-import CSS from "./Navbar.css";
+import "./Navbar.css";
 
 function Nav(){
     return(
-        <Grid container spacing={3}>
+        <Grid
+        className="container" 
+        container 
+        direction="row"
+        justify="flex-start"
+        alignItems="flex-start"
+        spacing={3}
+        >
              
-            <Grid className="grid" item xs={3}>
+            <Grid className="grid" item xs={6}>
                 <Link className="link" to="/">
                     <HomeIcon />
                 </Link>
-            </Grid>
-        
-            <Grid item xs={3}>
                 <Link className="link" to="/waste">
                     <DeleteIcon />
                 </Link>
-            </Grid>
-        
-            <Grid item xs={3}>
                 <Link className="link" to="paths">
                     <BikeIcon />
+                </Link>
+                <Link className="link" to="/">
+                    <CloudIcon />
                 </Link>
             </Grid>
 
             <Grid item xs={3}>
-                <Link className="link" to="/">
-                    <CloudIcon />
-                </Link>
+                
+            </Grid>
+            <Grid item xs={3}>
+                
             </Grid>
 
         </Grid>    
