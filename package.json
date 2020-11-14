@@ -1,8 +1,8 @@
 {
-  "homepage": "https://sarahshea12.github.io/explore-copenhagen",
-  "name": "client",
+  "name": "explore-copenhagen",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sarahshea12.github.io/explore-copenhagen",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@testing-library/jest-dom": "^5.11.4",
