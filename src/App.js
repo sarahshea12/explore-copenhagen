@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CovidData from "./pages/CovidData";
 import Forecast from "./pages/Forecast";
 import Nav from "./components/Navbar";
