@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/explore-copenhagen/static/js/main.0aced0bc.chunk.js",
-    "main.js.map": "/explore-copenhagen/static/js/main.0aced0bc.chunk.js.map",
+    "main.js": "/explore-copenhagen/static/js/main.403a7986.chunk.js",
+    "main.js.map": "/explore-copenhagen/static/js/main.403a7986.chunk.js.map",
     "runtime-main.js": "/explore-copenhagen/static/js/runtime-main.c369d675.js",
     "runtime-main.js.map": "/explore-copenhagen/static/js/runtime-main.c369d675.js.map",
     "static/css/2.1ff209b0.chunk.css": "/explore-copenhagen/static/css/2.1ff209b0.chunk.css",
-    "static/js/2.fb1620fb.chunk.js": "/explore-copenhagen/static/js/2.fb1620fb.chunk.js",
-    "static/js/2.fb1620fb.chunk.js.map": "/explore-copenhagen/static/js/2.fb1620fb.chunk.js.map",
+    "static/js/2.5f5b2dc5.chunk.js": "/explore-copenhagen/static/js/2.5f5b2dc5.chunk.js",
+    "static/js/2.5f5b2dc5.chunk.js.map": "/explore-copenhagen/static/js/2.5f5b2dc5.chunk.js.map",
     "index.html": "/explore-copenhagen/index.html",
     "static/css/2.1ff209b0.chunk.css.map": "/explore-copenhagen/static/css/2.1ff209b0.chunk.css.map",
-    "static/js/2.fb1620fb.chunk.js.LICENSE.txt": "/explore-copenhagen/static/js/2.fb1620fb.chunk.js.LICENSE.txt"
+    "static/js/2.5f5b2dc5.chunk.js.LICENSE.txt": "/explore-copenhagen/static/js/2.5f5b2dc5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c369d675.js",
     "static/css/2.1ff209b0.chunk.css",
-    "static/js/2.fb1620fb.chunk.js",
-    "static/js/main.0aced0bc.chunk.js"
+    "static/js/2.5f5b2dc5.chunk.js",
+    "static/js/main.403a7986.chunk.js"
   ]
 }
