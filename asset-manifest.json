@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/explore-copenhagen/static/js/main.cbf09716.chunk.js",
-    "main.js.map": "/explore-copenhagen/static/js/main.cbf09716.chunk.js.map",
+    "main.js": "/explore-copenhagen/static/js/main.20e44eca.chunk.js",
+    "main.js.map": "/explore-copenhagen/static/js/main.20e44eca.chunk.js.map",
     "runtime-main.js": "/explore-copenhagen/static/js/runtime-main.c369d675.js",
     "runtime-main.js.map": "/explore-copenhagen/static/js/runtime-main.c369d675.js.map",
     "static/css/2.1ff209b0.chunk.css": "/explore-copenhagen/static/css/2.1ff209b0.chunk.css",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.c369d675.js",
     "static/css/2.1ff209b0.chunk.css",
     "static/js/2.81a3dc46.chunk.js",
-    "static/js/main.cbf09716.chunk.js"
+    "static/js/main.20e44eca.chunk.js"
   ]
 }
