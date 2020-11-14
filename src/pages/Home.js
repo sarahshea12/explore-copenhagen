@@ -19,7 +19,7 @@ function Home(){
                 <br></br>
                 <br></br>
             </Grid>
-            <Grid className="cope" item xs={12}>copehagen</Grid>
+            <Grid className="title" item xs={12}>København</Grid>
         </Grid>
     )
 }

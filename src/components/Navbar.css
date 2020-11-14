@@ -1,10 +1,10 @@
 .link:link, .link:visited {
-    background-color: navy;
-  color: white;
-  padding: 10px 20px;
-  text-align: right;
-  text-decoration: none;
-  display: inline-block;
+    background-color: skyblue;
+    color: white;
+    padding: 10px 20px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
     text-decoration: none;
 }
 
@@ -15,10 +15,10 @@
 
 .link:hover, .link:active {
     background-color: white;
-    color: navy
+    color: skyblue;
   }
 
 .container {
-    background-color: navy;
+    background-color: skyblue;
     color: white;
 }
