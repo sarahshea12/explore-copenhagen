@@ -4,14 +4,14 @@ import "mapbox-gl/dist/mapbox-gl.css";
 
 const MAPBOX_TOKEN = "pk.eyJ1Ijoic2FyYWhzaGVhMTIiLCJhIjoiY2toZmxuaDM4MHFvdzJwcXBxbDd0cnF0MyJ9.kkp2ulqhOdhgwysy05DlOA"
 
-function BikeMap(){
+function Map(){
     const [viewport, setViewport] = useState({
         width: 600,
         height: 600,
         latitude: 55.6761,
         longitude: 12.5683,
         zoom: 11
-    })
+    });
 
     return (
         <ReactMapGL 
@@ -25,4 +25,4 @@ function BikeMap(){
     )
 }
 
-export default BikeMap;
+export default Map;
