@@ -14,7 +14,7 @@ function Forecast(props) {
 
         var j;
         for (j=0;j<10;j++){
-        nextNineHours.push({time: new Date(object[j].time).getHours()+":00", Celcius: object[j].data.instant.details.air_temperature, wind: object[j].data.instant.details.wind_speed, Humidity: object[j].data.instant.details.relative_humidity});
+        nextNineHours.push({time: new Date(object[j].time).getHours()+":00", Celcius: object[j].data.instant.details.air_temperature, clouds: object[j].data.instant.details.cloud_area_fraction, Humidity: object[j].data.instant.details.relative_humidity, mm: object[j].data.next_1_hours.details.precipitation_amount});
         }
 
     setData(nextNineHours);
