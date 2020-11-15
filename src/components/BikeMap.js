@@ -4,7 +4,9 @@ import "mapbox-gl/dist/mapbox-gl.css";
 
 const MAPBOX_TOKEN = "pk.eyJ1Ijoic2FyYWhzaGVhMTIiLCJhIjoiY2toZmxuaDM4MHFvdzJwcXBxbDd0cnF0MyJ9.kkp2ulqhOdhgwysy05DlOA"
 
-function Map(){
+// 0ba4e0, c8cfd0
+
+function BikeMap(){
     const [viewport, setViewport] = useState({
         width: 600,
         height: 600,
@@ -19,10 +21,10 @@ function Map(){
         width="100vw"
         height="100vh"
         mapboxApiAccessToken={MAPBOX_TOKEN}
-        mapStyle="mapbox://styles/sarahshea12/ckhfv216z0v8619outpga50dv"
+        mapStyle="mapbox://styles/sarahshea12/ckhhyjrov00ik19pd5z27smfv"
         onViewportChange = {nextViewport => setViewport(nextViewport)}
         />
     )
 }
 
-export default Map;
+export default BikeMap;

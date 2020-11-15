@@ -1,5 +1,5 @@
 .link:link, .link:visited {
-    background-color: skyblue;
+    background-color: #0ba4e0;
     color: white;
     padding: 10px 20px;
     text-align: right;
@@ -15,10 +15,10 @@
 
 .link:hover, .link:active {
     background-color: white;
-    color: skyblue;
+    color: #0ba4e0;
   }
 
 .container {
-    background-color: skyblue;
+    background-color: #0ba4e0;
     color: white;
 }

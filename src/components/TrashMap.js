@@ -19,7 +19,7 @@ function TrashMap(){
         width="100vw"
         height="100vh"
         mapboxApiAccessToken={MAPBOX_TOKEN}
-        mapStyle="mapbox://styles/sarahshea12/ckhfk1inz09t019n961j3qsab"
+        mapStyle="mapbox://styles/sarahshea12/ckhgepa4b0b2a19qxg3s8fm3k"
         onViewportChange = {nextViewport => setViewport(nextViewport)}
         />
     )
