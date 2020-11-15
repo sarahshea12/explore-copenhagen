@@ -1,5 +1,5 @@
 import React from 'react';
-import { LineChart, Line, BarChart, Bar, Legend, CartesianGrid, YAxis, XAxis, } from "recharts";
+import { LineChart, Line, BarChart, Bar, Legend, CartesianGrid, YAxis, XAxis, Tooltip } from "recharts";
 import Grid from "@material-ui/core/Grid";
 
 function Chart(props){
@@ -26,6 +26,7 @@ function Chart(props){
             <XAxis dataKey="time" />
             <YAxis />
             <Legend width={100} wrapperStyle={{ bottom: 95, right: 20, backgroundColor: '#f5f5f5', border: '1px solid #d5d5d5', borderRadius: 3, lineHeight: '40px' }} />
+            <Tooltip />
             </LineChart>
         </Grid>
 
@@ -36,9 +37,10 @@ function Chart(props){
             <Legend width={100} wrapperStyle={{ bottom: 90, right: 20, backgroundColor: '#f5f5f5', border: '1px solid #d5d5d5', borderRadius: 3, lineHeight: '40px' }} />
             <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
             <Bar dataKey="Humidity" fill="#8884d8" barSize={30} />
+            <Tooltip />
             </BarChart>
         </Grid>
-        
+
     </Grid>
     )
 }
