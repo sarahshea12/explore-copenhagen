@@ -3,18 +3,22 @@ import Chart from "../components/Chart";
 import API from "../utils/API";
 
 function Forecast(props) {
+
     const [data, setData] = useState([]);
 
     API.getForecast().then(response => {
-        console.log("API response");
         
         let object = response.data.properties.timeseries;
-        let nextTenDays = []
+
+        let nextNineHours = [];
+
         var j;
         for (j=0;j<10;j++){
-            nextTenDays.push({time: new Date(object[j].time).getHours()+":00", temp: object[j].data.instant.details.air_temperature});
+            nextNineHours.push({time: new Date(object[j].time).getHours()+":00", Celcius: object[j].data.instant.details.air_temperature, wind: object[j].data.instant.details.wind_speed, Humidity: object[j].data.instant.details.relative_humidity});
         }
-        setData(nextTenDays);
+
+        setData(nextNineHours);
+
     });
 
     return (

@@ -20,6 +20,7 @@ function Home(){
                 <br></br>
             </Grid>
             <Grid className="title" item xs={12}>København</Grid>
+            <Grid className="subtext" item xs={12}>random text about the use of the website</Grid>
         </Grid>
     )
 }

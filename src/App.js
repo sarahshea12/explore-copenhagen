@@ -31,13 +31,18 @@ function App() {
           )}>
           </Route>
 
-          <Route exact path="/libraries" render={() => (
+          <Route exact path="/library" render={() => (
             <Library />
           )}>
           </Route>
 
           <Route exact path="/weather" render={() => (
             <Forecast />
+          )}>
+          </Route>
+
+          <Route exact path="/covid" render={() => (
+            <CovidData />
           )}>
           </Route>
 

@@ -11,7 +11,7 @@ function BikeMap(){
         width: 600,
         height: 600,
         latitude: 55.6761,
-        longitude: 12.5683,
+        longitude: 12.48,
         zoom: 11
     });
 

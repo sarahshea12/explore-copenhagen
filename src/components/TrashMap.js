@@ -9,7 +9,7 @@ function TrashMap(){
         width: 600,
         height: 600,
         latitude: 55.6761,
-        longitude: 12.5683,
+        longitude: 12.54,
         zoom: 12
     })
 
@@ -19,7 +19,7 @@ function TrashMap(){
         width="100vw"
         height="100vh"
         mapboxApiAccessToken={MAPBOX_TOKEN}
-        mapStyle="mapbox://styles/sarahshea12/ckhgepa4b0b2a19qxg3s8fm3k"
+        mapStyle="mapbox://styles/sarahshea12/ckhipnwb909fx19mqzqzeybg4"
         onViewportChange = {nextViewport => setViewport(nextViewport)}
         />
     )

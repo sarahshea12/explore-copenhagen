@@ -12,7 +12,7 @@ function LibraryMap(){
         height: 600,
         latitude: 55.6761,
         longitude: 12.5683,
-        zoom: 11
+        zoom: 12
     });
 
     return (

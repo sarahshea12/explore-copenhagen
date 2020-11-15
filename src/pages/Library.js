@@ -1,5 +1,4 @@
 import React from "react";
-import TrashMap from "../components/TrashMap";
 import Grid from "@material-ui/core/Grid";
 import LibraryMap from "../components/LibraryMap";
 
@@ -9,8 +8,7 @@ function Library(){
             <Grid item xs={12}>
                 <LibraryMap />
             </Grid>
-        </Grid>
-        
+        </Grid>  
     )
 }
 
