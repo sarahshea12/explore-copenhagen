@@ -1,14 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { LineChart, Line, CartesianGrid, YAxis, XAxis } from "recharts";
-import API from "../utils/API";
-
-
 
 function Chart(props){
 
-    //const data = [{name: props.data.time}]
-
-    console.log("data");
     let data = props.data;
     //console.log(props.data);
 

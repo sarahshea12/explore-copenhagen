@@ -6,6 +6,7 @@ import Nav from "./components/Navbar/Navbar";
 import TrashData from "./pages/TrashData";
 import Paths from "./pages/Paths";
 import Home from "./pages/Home";
+import Library from "./pages/Library";
 
 function App() {
   return (
@@ -27,6 +28,11 @@ function App() {
           
           <Route exact path="/paths" render={() => (
             <Paths />
+          )}>
+          </Route>
+
+          <Route exact path="/libraries" render={() => (
+            <Library />
           )}>
           </Route>
 
