@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import CovidData from "./pages/CovidData";
 import Forecast from "./pages/Forecast";
 import Nav from "./components/Navbar/Navbar";
 import TrashData from "./pages/TrashData";
 import Paths from "./pages/Paths";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import Library from "./pages/Library";
+import HomeCH from "./pages/Home/HomeCH";
 
 function App() {
   return (
@@ -41,8 +41,8 @@ function App() {
           )}>
           </Route>
 
-          <Route exact path="/covid" render={() => (
-            <CovidData />
+          <Route exact path="/ch" render={() => (
+            <HomeCH />
           )}>
           </Route>
 

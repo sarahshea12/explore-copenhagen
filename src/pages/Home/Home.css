@@ -1,0 +1,27 @@
+.title {
+    color: #0ba4e0;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-size: 180px;
+}
+.language {
+    text-align: right;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: hotpink;
+}
+.textLink {
+    text-decoration: none;
+    color: hotpink;
+    size: 50px;
+}
+.language:hover, .language:active, .textLink:hover, .textLink:active {
+    color: #0ba4e0;
+}
+.subtext {
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-size: 30px;
+}
+

@@ -8,16 +8,16 @@ function Forecast(props) {
 
     API.getForecast().then(response => {
         
-        let object = response.data.properties.timeseries;
+    let object = response.data.properties.timeseries;
 
-        let nextNineHours = [];
+    let nextNineHours = [];
 
         var j;
         for (j=0;j<10;j++){
-            nextNineHours.push({time: new Date(object[j].time).getHours()+":00", Celcius: object[j].data.instant.details.air_temperature, wind: object[j].data.instant.details.wind_speed, Humidity: object[j].data.instant.details.relative_humidity});
+        nextNineHours.push({time: new Date(object[j].time).getHours()+":00", Celcius: object[j].data.instant.details.air_temperature, wind: object[j].data.instant.details.wind_speed, Humidity: object[j].data.instant.details.relative_humidity});
         }
 
-        setData(nextNineHours);
+    setData(nextNineHours);
 
     });
 
