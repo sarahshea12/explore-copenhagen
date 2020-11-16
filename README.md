@@ -16,7 +16,7 @@ https://sarahshea12.github.io/explore-copenhagen/
   * [Technology](#Technology)
 
 ## Description:
-A React app for discovering useful information in the municipality of Copenhagen, Denmark including bike paths routes, waste basket locations, and libraries on an interactive map. Hourly weather information such as humidity, precipitation, cloud coverage, and air temperature are represented dynamically as line graphs and bar charts.
+A React app for discovering useful information in the municipality of Copenhagen, Denmark including bike paths routes, waste basket locations, and libraries gathered from opendata.dk on an interactive map. Hourly weather information such as humidity, precipitation, cloud coverage, and air temperature are represented dynamically as line graphs and bar charts based on data from Meteorologisk Institutt. 
 
 ## Installation:
 Clone this repo to your local machine using https://github.com/sarahshea12/expore-copenhagen.git
@@ -29,10 +29,10 @@ Fork this repository. Create a branch: git checkout -b <branch_name>. Add: git a
 
 ## Technology:
 * React.js
-* Mapbox
-* Recharts
-* Material UI
 * Axios
 * Express
-* Open Data DK
-* Meteorologisk Institutt API
+* Mapbox (mapbox.com)
+* Recharts (recharts.org)
+* Material UI (material-ui.com/)
+* Open Data DK (opendata.dk)
+* Meteorologisk Institutt API (https://api.met.no/weatherapi/locationforecast/2.0/documentation)
