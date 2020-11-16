@@ -3,3 +3,8 @@ p {
     font-family: 'Courier New', monospace;
     font-size: 30px;
 }
+.toggle {
+    font-family: 'Times New Roman';
+    font-size: 80px;
+    font-weight: bold;
+}

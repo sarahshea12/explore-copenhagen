@@ -25,8 +25,8 @@ function Chart(props){
         direction="row"
         justify="flex-end"
         alignItems="flex-start">
-            <Button color="secondary" onClick={() => { setTempText("Hourly Temperature"); setHumidityText("Hourly Humidity"); setRainfallText("Precipitation"); setCloudText("% Cloud Coverage") }}>EN</Button>
-            <Button color="secondary" onClick={() => { setTempText("溫度"); setHumidityText("濕度"); setRainfallText("降雨量"); setCloudText("雲量") }}>中文</Button>
+            <Button className="toggle" color="primary" onClick={() => { setTempText("Hourly Temperature"); setHumidityText("Hourly Humidity"); setRainfallText("Precipitation"); setCloudText("% Cloud Coverage") }}>EN</Button>
+            <Button classname="toggle" color="primary" onClick={() => { setTempText("溫度"); setHumidityText("濕度"); setRainfallText("降雨量"); setCloudText("雲量") }}>中文</Button>
         </Grid>
         
         <Grid item xs={12}>
@@ -42,7 +42,7 @@ function Chart(props){
             <LineChart width={600} height={300} data={data} margin={{ top: 40, right: 20, bottom: 5, left: 0 }}>
             <Line type="monotone" dataKey="Celcius" stroke="#0ba4e0" />
             <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-            <XAxis dataKey="time" />
+            <XAxis dataKey="time" stroke="#8884d8" />
             <YAxis />
             <Legend width={100} wrapperStyle={{ bottom: 95, right: 20, backgroundColor: '#f5f5f5', border: '1px solid #d5d5d5', borderRadius: 3, lineHeight: '40px' }} />
             <Tooltip />
@@ -56,7 +56,7 @@ function Chart(props){
             <XAxis dataKey="time" stroke="#8884d8" />
             <YAxis />
             <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-            <Bar dataKey="Humidity" fill="#e43a83" barSize={30} />
+            <Bar dataKey="Humidity" fill="#b500b5" barSize={30} />
             <Tooltip />
             </BarChart>
         </Grid>
@@ -67,7 +67,7 @@ function Chart(props){
             <XAxis dataKey="time" stroke="#8884d8" />
             <YAxis />
             <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-            <Bar dataKey="clouds" fill="#e43a83" barSize={30} />
+            <Bar dataKey="clouds" fill="#690069" barSize={30} />
             <Tooltip />
             </BarChart>
         </Grid>
@@ -77,7 +77,7 @@ function Chart(props){
             <LineChart width={600} height={300} data={data} margin={{ top: 40, right: 20, bottom: 5, left: 0 }}>
             <Line type="monotone" dataKey="mm" stroke="#0ba4e0" />
             <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-            <XAxis dataKey="time" />
+            <XAxis dataKey="time" stroke="#8884d8" />
             <YAxis />
             <Legend width={100} wrapperStyle={{ bottom: 95, right: 20, backgroundColor: '#f5f5f5', border: '1px solid #d5d5d5', borderRadius: 3, lineHeight: '40px' }} />
             <Tooltip />
