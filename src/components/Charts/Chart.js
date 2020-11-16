@@ -25,8 +25,8 @@ function Chart(props){
         direction="row"
         justify="flex-end"
         alignItems="flex-start">
-            <Button className="toggle" color="primary" onClick={() => { setTempText("Hourly Temperature"); setHumidityText("Hourly Humidity"); setRainfallText("Precipitation"); setCloudText("% Cloud Coverage") }}>EN</Button>
-            <Button classname="toggle" color="primary" onClick={() => { setTempText("溫度"); setHumidityText("濕度"); setRainfallText("降雨量"); setCloudText("雲量") }}>中文</Button>
+            <Button className="toggle" onClick={() => { setTempText("Hourly Temperature"); setHumidityText("Hourly Humidity"); setRainfallText("Precipitation"); setCloudText("% Cloud Coverage") }}>EN</Button>
+            <Button classname="toggle" onClick={() => { setTempText("溫度"); setHumidityText("濕度"); setRainfallText("降雨量"); setCloudText("雲量") }}>中文</Button>
         </Grid>
         
         <Grid item xs={12}>
