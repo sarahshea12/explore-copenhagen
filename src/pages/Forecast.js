@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Chart from "../components/Chart";
+import Chart from "../components/Charts/Chart";
 import API from "../utils/API";
 
 function Forecast(props) {
