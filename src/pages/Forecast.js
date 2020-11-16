@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Chart from "../components/Charts/Chart";
 import API from "../utils/API";
+import { Grid, TextField } from "@material-ui/core";
 
 function Forecast(props) {
 
@@ -8,7 +9,7 @@ function Forecast(props) {
     const [data, setData] = useState([]);
 
     // call to the weather API
-    API.getForecast().then(response => {
+    API.getForecast(55, 12).then(response => {
         
     // created an object for the response
     let object = response.data.properties.timeseries;
@@ -27,7 +28,18 @@ function Forecast(props) {
     });
 
     return (
-        <Chart data={data} />
+        <Grid container>
+            <Grid xs={12}><br></br></Grid>
+            <Grid>
+                <form noValidate autoComplete="off">
+                <TextField id="outlined-basic" label="Street Name" variant="outlined" />
+                </form> 
+            </Grid>
+
+            <Grid>
+                <Chart data={data} />
+            </Grid>
+        </Grid>
     )
 }
 

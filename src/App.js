@@ -7,15 +7,24 @@ import Paths from "./pages/Paths";
 import Home from "./pages/Home/Home";
 import Library from "./pages/Library";
 import HomeCH from "./pages/Home/HomeCH";
+import Grid from "@material-ui/core/Grid";
 
 function App() {
   return (
-    <Router basename="/explore-copenhagen">
+    <Grid 
+    container
+    direction="column"
+    justify="flex-start"
+    alignment="stretch"
+    >
+      <Router basename="/explore-copenhagen">
 
-        <Nav />
+        <Grid>
+          <Nav />
+        </Grid>
 
+        <Grid>
         <Switch>
-
           <Route exact path="/" render={() => (
             <Home />
           )}>
@@ -45,10 +54,13 @@ function App() {
             <HomeCH />
           )}>
           </Route>
-
         </Switch>
 
-    </Router>
+        </Grid>
+
+      </Router>
+      
+    </Grid>
   );
 }
 
