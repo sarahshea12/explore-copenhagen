@@ -10,7 +10,7 @@ export default {
             "headers":{
                 "content-type":"application/octet-stream",
                 "x-rapidapi-host":"trueway-geocoding.p.rapidapi.com",
-                "x-rapidapi-key":process.env.REACT_APP_GEO_API_KEY,
+                "x-rapidapi-key":"a095604c14mshcf511ea4bd14f56p12d80ajsnf43076094929",
                 "useQueryString":true
                 },"params":{
                 "country":"DK",
