@@ -4,9 +4,9 @@ import "mapbox-gl/dist/mapbox-gl.css";
 
 const MAPBOX_TOKEN = "pk.eyJ1Ijoic2FyYWhzaGVhMTIiLCJhIjoiY2toZmxuaDM4MHFvdzJwcXBxbDd0cnF0MyJ9.kkp2ulqhOdhgwysy05DlOA"
 
-// 0ba4e0, c8cfd0
-
 function LibraryMap(){
+
+    //View for the map
     const [viewport, setViewport] = useState({
         width: 600,
         height: 600,

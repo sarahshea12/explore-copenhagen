@@ -6,8 +6,10 @@ import "./Chart.css";
 
 function Chart(props){
 
+    // Inherited data from Forecast page
     let data = props.data;
 
+    // Setting states of the text elements on the page so they may be translated
     const [tempText, setTempText] = useState("Hourly Temperature");
     const [humidityText, setHumidityText] = useState("Hourly Humidity");
     const [rainfallText, setRainfallText] = useState("Precipitation");
@@ -19,7 +21,7 @@ function Chart(props){
     justify="space-around"
     alignItems="stretch"
     >
-         <Grid container
+        <Grid container
         direction="row"
         justify="flex-end"
         alignItems="flex-start">

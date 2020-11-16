@@ -6,6 +6,7 @@ import "./Home.css";
 function HomeCH(){
     return (
         <Grid container spacing={3}>
+            
             <Grid 
             container
             justify="flex-end"

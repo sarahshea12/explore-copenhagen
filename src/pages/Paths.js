@@ -9,7 +9,6 @@ function Paths(){
                 <BikeMap />
             </Grid>
         </Grid>
-        
     )
 }
 

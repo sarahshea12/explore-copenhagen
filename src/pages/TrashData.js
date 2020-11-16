@@ -9,7 +9,6 @@ function TrashData(){
                 <TrashMap />
             </Grid>
         </Grid>
-        
     )
 }
 

@@ -23,25 +23,22 @@ function Nav(){
                 <Link className="link" to="/">
                     <HomeIcon />
                 </Link>
+
                 <Link className="link" to="/waste">
                     <DeleteIcon />
                 </Link>
+
                 <Link className="link" to="/paths">
                     <BikeIcon />
                 </Link>
+
                 <Link className="link" to="/library">
                     <BookIcon />
                 </Link>
+
                 <Link className="link" to="/weather">
                     <CloudIcon />
                 </Link>
-            </Grid>
-
-            <Grid item xs={3}>
-                
-            </Grid>
-            <Grid item xs={3}>
-                
             </Grid>
 
         </Grid>    
