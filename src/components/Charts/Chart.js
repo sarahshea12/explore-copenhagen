@@ -38,7 +38,7 @@ function Chart(props){
         <Grid item xs={12} sm={6}>
         <p>{tempText}</p>
             <LineChart width={600} height={300} data={data} margin={{ top: 40, right: 20, bottom: 5, left: 0 }}>
-            <Line type="monotone" dataKey="Celcius" stroke="#ea6134" />
+            <Line type="monotone" dataKey="Celcius" stroke="#0ba4e0" />
             <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
             <XAxis dataKey="time" />
             <YAxis />
@@ -54,7 +54,7 @@ function Chart(props){
             <XAxis dataKey="time" stroke="#8884d8" />
             <YAxis />
             <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-            <Bar dataKey="Humidity" fill="#facdbf" barSize={30} />
+            <Bar dataKey="Humidity" fill="#e43a83" barSize={30} />
             <Tooltip />
             </BarChart>
         </Grid>

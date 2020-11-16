@@ -13,7 +13,7 @@
 }
 .textLink {
     text-decoration: none;
-    color: hotpink;
+    color: #e43a83;
     size: 50px;
 }
 .language:hover, .language:active, .textLink:hover, .textLink:active {
