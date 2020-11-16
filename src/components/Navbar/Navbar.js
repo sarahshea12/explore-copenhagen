@@ -19,7 +19,7 @@ function Nav(){
         spacing={3}
         >
              
-            <Grid className="grid" item xs={6}>
+            <Grid className="grid" item xs={12}>
                 <Link className="link" to="/">
                     <HomeIcon />
                 </Link>

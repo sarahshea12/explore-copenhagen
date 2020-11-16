@@ -11,9 +11,6 @@ function Home(){
             container
             justify="flex-end"
             alignItems="flex-end">
-                <Grid item xs={12}>
-                    <br></br>
-                </Grid>
                 <Link className="language" to="/ch">中文</Link>
             </Grid>
 

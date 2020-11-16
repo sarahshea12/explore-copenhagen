@@ -13,17 +13,18 @@ function App() {
   return (
     <Grid 
     container
-    direction="column"
+    direction="row"
     justify="flex-start"
     alignment="stretch"
+    spacing={1}
     >
       <Router basename="/explore-copenhagen">
 
-        <Grid>
+        <Grid xs={12}>
           <Nav />
         </Grid>
 
-        <Grid>
+        <Grid xs={12}>
         <Switch>
           <Route exact path="/" render={() => (
             <Home />
@@ -59,7 +60,7 @@ function App() {
         </Grid>
 
       </Router>
-      
+
     </Grid>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Chart from "../components/Charts/Chart";
 import API from "../utils/API";
-import { Grid, TextField } from "@material-ui/core";
+import { Grid, TextField, Button } from "@material-ui/core";
 
 function Forecast(props) {
 
@@ -29,10 +29,17 @@ function Forecast(props) {
 
     return (
         <Grid container>
-            <Grid xs={12}><br></br></Grid>
             <Grid>
                 <form noValidate autoComplete="off">
-                <TextField id="outlined-basic" label="Street Name" variant="outlined" />
+                <TextField id="outlined-basic" label="Address" variant="outlined" 
+                value={props.place}
+                onChange={props.handleInputChange}
+                id="place"
+                />
+                <Button
+                type="submit"
+                onClick={props.handeFormSubmit}
+                >Search</Button>
                 </form> 
             </Grid>
 
