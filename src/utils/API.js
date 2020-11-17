@@ -8,11 +8,10 @@ export default {
             "method": "GET",
             "url": "https://trueway-geocoding.p.rapidapi.com/Geocode",
             "headers":{
-                "content-type":"application/octet-stream",
                 "x-rapidapi-host":"trueway-geocoding.p.rapidapi.com",
                 "x-rapidapi-key":"a095604c14mshcf511ea4bd14f56p12d80ajsnf43076094929",
-                "useQueryString":true
-                },"params":{
+                },
+            "params":{
                 "country":"DK",
                 "address": encodedLocation
                 }

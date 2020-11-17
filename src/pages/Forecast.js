@@ -24,11 +24,16 @@ function Forecast(props) {
 
         API.getGeocode(address)
             .then(res => {
+                console.log(res);
                 // changes state to the lat/lon of the location
-                setLat({lat: res.data.results[0].location.lat})
-                setLon({lon: res.data.results[0].location.lng})
-                setAddress({place: res.data.results[0].address})
-                console.log(lat+ " "+ lon)
+                let lattitude = JSON.stringify(res.data.results[0].location.lat);
+                let longitude = JSON.stringify(res.data.results[0].location.lng);
+                let location = JSON.stringify(res.data.results[0].address);
+                setLat(lattitude);
+                setLon(longitude);
+                setAddress(location)
+                console.log(location)
+                console.log(lat+lon);
             }).then(() => {
                 // call to the weather API
                 API.getForecast(lat, lon).then(response => {
