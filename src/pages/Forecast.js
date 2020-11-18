@@ -15,16 +15,10 @@ function Forecast(props) {
 
     function handleInputChange(event) {
         setAddress(event.target.value);
-        console.log(address)
-    }
-
-    function handleFormSubmit(event) {
-
-        event.preventDefault();
-
+        console.log(address);
         API.getGeo(address)
             .then(res => {
-                // console.log(res.data[0].lat);
+                console.log(res.data[0]);
                 // changes state to the lat/lon of the location
                 let location = res.data[0].display_name;
                 setLat(res.data[0].lat);
@@ -32,7 +26,13 @@ function Forecast(props) {
                 setAddress(location)
                 console.log(location)
                 console.log(lat+" "+lon);
-            }).then(() => {
+            });
+    }
+
+    function handleFormSubmit(event) {
+
+        event.preventDefault();
+
                 // call to the weather API
                 API.getForecast(lat, lon).then(response => {
         
@@ -53,8 +53,7 @@ function Forecast(props) {
     
         });
             
-    });
-};
+    };
 
   
 

@@ -4,11 +4,7 @@ import LibraryMap from "../components/LibraryMap";
 
 function Library(){
     return (
-        <Grid container spacing={2}>
-            <Grid item xs={12}>
-                <LibraryMap />
-            </Grid>
-        </Grid>  
+        <LibraryMap />     
     )
 }
 

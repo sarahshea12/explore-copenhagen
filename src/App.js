@@ -31,28 +31,18 @@ function App() {
           )}>
           </Route>
 
-          <Route exact path="/waste" render={() => (
-            <TrashData />
-          )}>
-          </Route>
-          
-          <Route exact path="/paths" render={() => (
-            <Paths />
+          <Route exact path="/ch" render={() => (
+            <HomeCH />
           )}>
           </Route>
 
-          <Route exact path="/library" render={() => (
+          <Route exact path="/map" render={() => (
             <Library />
           )}>
           </Route>
 
           <Route exact path="/weather" render={() => (
             <Forecast />
-          )}>
-          </Route>
-
-          <Route exact path="/ch" render={() => (
-            <HomeCH />
           )}>
           </Route>
         </Switch>
