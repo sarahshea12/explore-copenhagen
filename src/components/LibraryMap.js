@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import ReactMapGL from "react-map-gl";
+import ReactMapGL, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+import * as trashData from "./data/trash.json";
+import { LocalParking } from "@material-ui/icons";
 
 const MAPBOX_TOKEN = "pk.eyJ1Ijoic2FyYWhzaGVhMTIiLCJhIjoiY2toZmxuaDM4MHFvdzJwcXBxbDd0cnF0MyJ9.kkp2ulqhOdhgwysy05DlOA"
 
@@ -15,7 +17,11 @@ function LibraryMap(){
         zoom: 12
     });
 
+    //console.log(trashData);
+    console.log(trashData.default.features[1].properties.driftsplan_navn);
+
     return (
+    <div>
         <ReactMapGL 
         {...viewport}
         width="100vw"
@@ -23,7 +29,17 @@ function LibraryMap(){
         mapboxApiAccessToken={MAPBOX_TOKEN}
         mapStyle="mapbox://styles/sarahshea12/ckhilnhdj0j8019noz4pvtd33"
         onViewportChange = {nextViewport => setViewport(nextViewport)}
-        />
+        >
+        {trashData.default.features.map(can => {
+            <Marker key={can.id}
+            latitude={can.geometry.coordinates[0][1]}
+            longitude={can.geometry.coordinates[0][0]}>
+                <div>Trash{can.properties.driftsplan_navn}</div>
+                <button>TRASHCAN</button>
+            </Marker>
+        })}
+        </ReactMapGL>
+    </div>
     )
 }
 

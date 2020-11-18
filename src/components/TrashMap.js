@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import ReactMapGL from "react-map-gl";
+import ReactMapGL, { Source, Layer } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
-const MAPBOX_TOKEN = "pk.eyJ1Ijoic2FyYWhzaGVhMTIiLCJhIjoiY2toZmxuaDM4MHFvdzJwcXBxbDd0cnF0MyJ9.kkp2ulqhOdhgwysy05DlOA"
+const MAPBOX_TOKEN = "pk.eyJ1Ijoic2FyYWhzaGVhMTIiLCJhIjoiY2toZmxuaDM4MHFvdzJwcXBxbDd0cnF0MyJ9.kkp2ulqhOdhgwysy05DlOA";
 
 function TrashMap(){
 
@@ -18,8 +18,8 @@ function TrashMap(){
     return (
         <ReactMapGL 
         {...viewport}
-        width="100vw"
-        height="100vh"
+        width="100%"
+        height="100%"
         mapboxApiAccessToken={MAPBOX_TOKEN}
         mapStyle="mapbox://styles/sarahshea12/ckhipnwb909fx19mqzqzeybg4"
         onViewportChange = {nextViewport => setViewport(nextViewport)}

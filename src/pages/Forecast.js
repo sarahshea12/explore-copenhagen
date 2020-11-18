@@ -22,18 +22,16 @@ function Forecast(props) {
 
         event.preventDefault();
 
-        API.getGeocode(address)
+        API.getGeo(address)
             .then(res => {
-                console.log(res);
+                // console.log(res.data[0].lat);
                 // changes state to the lat/lon of the location
-                let lattitude = JSON.stringify(res.data.results[0].location.lat);
-                let longitude = JSON.stringify(res.data.results[0].location.lng);
-                let location = JSON.stringify(res.data.results[0].address);
-                setLat(lattitude);
-                setLon(longitude);
+                let location = res.data[0].display_name;
+                setLat(res.data[0].lat);
+                setLon(res.data[0].lon);
                 setAddress(location)
                 console.log(location)
-                console.log(lat+lon);
+                console.log(lat+" "+lon);
             }).then(() => {
                 // call to the weather API
                 API.getForecast(lat, lon).then(response => {
@@ -54,8 +52,9 @@ function Forecast(props) {
             console.log(data)
     
         });
-            })
-    }
+            
+    });
+};
 
   
 
