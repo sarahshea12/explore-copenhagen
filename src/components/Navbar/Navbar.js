@@ -32,7 +32,7 @@ function Nav(){
                     <BikeIcon />
                 </Link>
 
-                <Link className="link" to="/library">
+                <Link className="link" to="/map">
                     <BookIcon />
                 </Link>
 

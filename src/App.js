@@ -2,10 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Forecast from "./pages/Forecast";
 import Nav from "./components/Navbar/Navbar";
-import TrashData from "./pages/TrashData";
-import Paths from "./pages/Paths";
 import Home from "./pages/Home/Home";
-import Library from "./pages/Library";
+import MapPage from "./pages/MapPage";
 import HomeCH from "./pages/Home/HomeCH";
 import Grid from "@material-ui/core/Grid";
 
@@ -37,7 +35,7 @@ function App() {
           </Route>
 
           <Route exact path="/map" render={() => (
-            <Library />
+            <MapPage />
           )}>
           </Route>
 
