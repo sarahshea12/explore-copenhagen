@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ReactMapGL, { Marker } from "react-map-gl";
+import ReactMapGL, { Source, Layer, Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import * as trashData from "./data/trash.json";
 import { LocalParking } from "@material-ui/icons";
@@ -16,6 +16,14 @@ function LibraryMap(){
         longitude: 12.5683,
         zoom: 12
     });
+    const [data, setData] = useState(null);
+
+    fetch("./data/trash.json").then((res) => {
+        return res.text();
+    }).then((result) => {
+        setData(result);
+        console.log(result);
+    })
 
     //console.log(trashData);
     console.log(trashData.default.features[1].properties.driftsplan_navn);
@@ -30,6 +38,7 @@ function LibraryMap(){
         mapStyle="mapbox://styles/sarahshea12/ckhilnhdj0j8019noz4pvtd33"
         onViewportChange = {nextViewport => setViewport(nextViewport)}
         >
+        {/* <Source type="json" data={data}></Source> */}
         {trashData.default.features.map(can => {
             <Marker key={can.id}
             latitude={can.geometry.coordinates[0][1]}
