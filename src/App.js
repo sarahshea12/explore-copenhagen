@@ -9,19 +9,23 @@ import Grid from "@material-ui/core/Grid";
 
 function App() {
   return (
+    <div>
     <Grid 
     container
     direction="row"
-    justify="flex-start"
+    justify="center"
     alignment="stretch"
     height="100%"
     >
       <Router basename="/explore-copenhagen">
-
+      <div>
         <Grid item xs={12}>
           <Nav />
         </Grid>
+        
+      </div>
 
+      <div>
         <Grid item xs={12}>
         <Switch>
           <Route exact path="/" render={() => (
@@ -46,10 +50,12 @@ function App() {
         </Switch>
 
         </Grid>
+        </div>
 
       </Router>
 
     </Grid>
+    </div>
   );
 }
 
