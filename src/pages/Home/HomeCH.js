@@ -7,12 +7,9 @@ function HomeCH(){
     return (
         <div style={{paddingTop: 56}}>
             
-            <Grid 
-            container
-            justify="flex-end"
-            alignItems="flex-end">
+            <div>
                 <Link className="language" to="/">EN</Link>
-            </Grid>
+            </div>
 
             <Grid item xs={12}>
                 <br></br>

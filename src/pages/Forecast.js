@@ -63,7 +63,7 @@ function Forecast(props) {
 
     return (
         <div style={{paddingTop: 65}}>
-            <div>
+            <div style={{float: "center"}}>
                 <form noValidate autoComplete="off">
                 <TextField id="outlined-basic" label="Address" variant="outlined" 
                 value={address}

@@ -4,6 +4,7 @@ import Forecast from "./pages/Forecast";
 import Nav from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import MapPage from "./pages/MapPage";
+import Map from "./components/Map/Map";
 import HomeCH from "./pages/Home/HomeCH";
 import Grid from "@material-ui/core/Grid";
 
@@ -39,7 +40,7 @@ function App() {
           </Route>
 
           <Route exact path="/map" render={() => (
-            <MapPage />
+            <Map />
           )}>
           </Route>
 

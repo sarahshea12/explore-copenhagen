@@ -1,9 +1,10 @@
 import React, { useState, useCallback } from "react";
 import ReactMapGL, { Source, Layer, Marker, Popup } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import * as trashData from "./data/trash.json";
-import * as libraryData from "./data/library.json";
-import * as cycleData from "./data/cycle.json";
+import "./Map.css";
+import * as trashData from "../data/trash.json";
+import * as libraryData from "../data/library.json";
+import * as cycleData from "../data/cycle.json";
 import { ButtonGroup, Button } from "@material-ui/core"
 import { DirectonsBike, ImportContacts, Delete } from "@material-ui/icons";
 
@@ -36,11 +37,11 @@ function Map(){
     const [selectedLib, setSelectedLib] = useState(null);
 
     return (
-    <div>
+    <div className="map" style={{paddingTop: 69}}>
         <ReactMapGL 
         {...viewport}
-        width="100vw"
-        height="100vh"
+        width="98vw"
+        height="90vh"
         mapboxApiAccessToken={MAPBOX_TOKEN}
         mapStyle="mapbox://styles/sarahshea12/ckhilnhdj0j8019noz4pvtd33"
         onViewportChange = {nextViewport => setViewport(nextViewport)}
