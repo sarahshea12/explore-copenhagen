@@ -30,7 +30,7 @@ function Home(){
                 <br></br>
             </Grid>
             <Grid className="title" item xs={12}>København</Grid>
-            <Grid className="subtext" item xs={12}>Discover <Link className="textLink" to="/paths">bicycle paths</Link>，locations of <Link className="textLink" to="/waste">waste baskets</Link>, local <Link className="textLink" to="/library">libraries</Link>，and hourly <Link className="textLink" to="/weather">weather</Link> data</Grid>
+            <Grid className="subtext" item xs={12}><Link className="textLink" to="/map">Discover</Link> locations of waste baskets, local libraries，and hourly <Link className="textLink" to="/weather">weather</Link> data</Grid>
         </Grid>
     )
 }

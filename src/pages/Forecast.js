@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Chart from "../components/Charts/Chart";
 import API from "../utils/API";
+import SearchIcon from "@material-ui/icons/Search";
 import { Grid, TextField, Button } from "@material-ui/core";
 
 function Forecast(props) {
@@ -72,7 +73,7 @@ function Forecast(props) {
                 <Button
                 type="submit"
                 onClick={handleFormSubmit}
-                >Search</Button>
+                ><SearchIcon /></Button>
                 </form> 
             </Grid>
 

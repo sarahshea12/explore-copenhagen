@@ -4,8 +4,8 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import * as trashData from "./data/trash.json";
 import * as libraryData from "./data/library.json";
 import * as cycleData from "./data/cycle.json";
-import { LocalParking, DirectonsBike, ImportContacts, Delete } from "@material-ui/icons";
-import DeleteIcon from "@material-ui/icons/Delete";
+import { ButtonGroup, Button } from "@material-ui/core"
+import { DirectonsBike, ImportContacts, Delete } from "@material-ui/icons";
 
 const MAPBOX_TOKEN = "pk.eyJ1Ijoic2FyYWhzaGVhMTIiLCJhIjoiY2toZmxuaDM4MHFvdzJwcXBxbDd0cnF0MyJ9.kkp2ulqhOdhgwysy05DlOA"
 
@@ -28,6 +28,10 @@ function Map(){
     const [bikeIsToggled, setBikeIsToggled] = useState(false);
     const bikeToggle = useCallback(() => setBikeIsToggled(!bikeIsToggled));
 
+    // method from displaying the library data
+    const [libIsToggled, setLibIsToggled] = useState(false);
+    const libToggle = useCallback(() => setLibIsToggled(!libIsToggled));
+
     // state of the library that is clicked on to return the corresponding popup
     const [selectedLib, setSelectedLib] = useState(null);
 
@@ -41,6 +45,7 @@ function Map(){
         mapStyle="mapbox://styles/sarahshea12/ckhilnhdj0j8019noz4pvtd33"
         onViewportChange = {nextViewport => setViewport(nextViewport)}
         >
+    
         <button onClick={bikeToggle}>Bikes</button>
         {bikeIsToggled ? (
             <Source type="geojson" data={cycleData.default}>
@@ -71,19 +76,21 @@ function Map(){
             </Source> 
         ) : null}
         
-        <button>Libraries</button>
-        {libraryData.default.features.map((lib) => (
+        <button onClick={libToggle}>Libraries</button>
+        {libIsToggled ? (
+        libraryData.default.features.map((lib) => (
         <Marker
             latitude={lib.geometry.coordinates[1]}
             longitude={lib.geometry.coordinates[0]}
             offsetLeft={-20} offsetTop={-10}>
-                <button 
+                <Button 
                 onClick={(e) => {
                     e.preventDefault();
                     setSelectedLib(lib);
-                }}>{<ImportContacts />}</button>
+                }}>{<ImportContacts />}</Button>
         </Marker> 
-        ))}
+        ))
+        ) : null}
         {selectedLib ? (
             <Popup 
                 latitude={selectedLib.geometry.coordinates[1]}
@@ -100,6 +107,7 @@ function Map(){
                 </div>
             </Popup>
         ) : null}
+        
         </ReactMapGL>
     </div>
     )

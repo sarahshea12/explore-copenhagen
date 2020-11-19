@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 import HomeIcon from "@material-ui/icons/Home";
 import CloudIcon from "@material-ui/icons/Cloud";
-import MapIcon from "@material-ui/icons/LocalParking";
+import MapIcon from "@material-ui/icons/Explore";
 
 import "./Navbar.css";
 

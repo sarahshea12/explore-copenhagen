@@ -35,8 +35,7 @@ function HomeCH(){
 
             <Grid className="title" item xs={12}>哥本哈根</Grid>
 
-            <Grid className="subtext" item xs={12}>查看<Link className="textLink" to="/paths">自行車道</Link>
-            地圖，<Link className="textLink" to="/waste">垃圾桶</Link>分佈，<Link className="textLink" to="/library">圖書館</Link>分佈，每小時<Link className="textLink" to="/weather">天氣</Link>信息</Grid>
+            <Grid className="subtext" item xs={12}>查看自行車道地圖，垃圾桶分佈，圖書館分佈，每小時天氣信息</Grid>
 
         </Grid>
     )
