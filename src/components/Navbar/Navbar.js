@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
-import DeleteIcon from "@material-ui/icons/Delete";
 import HomeIcon from "@material-ui/icons/Home";
-import BikeIcon from "@material-ui/icons/DirectionsBike";
 import CloudIcon from "@material-ui/icons/Cloud";
-import BookIcon from "@material-ui/icons/ImportContacts";
+import MapIcon from "@material-ui/icons/LocalParking";
+
 import "./Navbar.css";
 
 function Nav(){
@@ -24,16 +23,8 @@ function Nav(){
                     <HomeIcon />
                 </Link>
 
-                <Link className="link" to="/waste">
-                    <DeleteIcon />
-                </Link>
-
-                <Link className="link" to="/paths">
-                    <BikeIcon />
-                </Link>
-
                 <Link className="link" to="/map">
-                    <BookIcon />
+                    <MapIcon />
                 </Link>
 
                 <Link className="link" to="/weather">

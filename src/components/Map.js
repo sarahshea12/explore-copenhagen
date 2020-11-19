@@ -4,9 +4,8 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import * as trashData from "./data/trash.json";
 import * as libraryData from "./data/library.json";
 import * as cycleData from "./data/cycle.json";
-import { LocalParking } from "@material-ui/icons";
+import { LocalParking, DirectonsBike, ImportContacts, Delete } from "@material-ui/icons";
 import DeleteIcon from "@material-ui/icons/Delete";
-import BookIcon from "@material-ui/icons/ImportContacts";
 
 const MAPBOX_TOKEN = "pk.eyJ1Ijoic2FyYWhzaGVhMTIiLCJhIjoiY2toZmxuaDM4MHFvdzJwcXBxbDd0cnF0MyJ9.kkp2ulqhOdhgwysy05DlOA"
 
@@ -31,8 +30,6 @@ function Map(){
 
     // state of the library that is clicked on to return the corresponding popup
     const [selectedLib, setSelectedLib] = useState(null);
-    
-    console.log(cycleData.default);
 
     return (
     <div>
@@ -84,7 +81,7 @@ function Map(){
                 onClick={(e) => {
                     e.preventDefault();
                     setSelectedLib(lib);
-                }}>{<BookIcon />}</button>
+                }}>{<ImportContacts />}</button>
         </Marker> 
         ))}
         {selectedLib ? (
