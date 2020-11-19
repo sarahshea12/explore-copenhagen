@@ -14,15 +14,15 @@ function App() {
     direction="row"
     justify="flex-start"
     alignment="stretch"
-    spacing={1}
+    height="100%"
     >
       <Router basename="/explore-copenhagen">
 
-        <Grid xs={12}>
+        <Grid item xs={12}>
           <Nav />
         </Grid>
 
-        <Grid xs={12}>
+        <Grid item xs={12}>
         <Switch>
           <Route exact path="/" render={() => (
             <Home />

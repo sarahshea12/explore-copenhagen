@@ -5,15 +5,12 @@ import "./Home.css";
 
 function HomeCH(){
     return (
-        <Grid container spacing={3}>
+        <div style={{paddingTop: 56}}>
             
             <Grid 
             container
             justify="flex-end"
             alignItems="flex-end">
-                <Grid item xs={12}>
-                    <br></br>
-                </Grid>
                 <Link className="language" to="/">EN</Link>
             </Grid>
 
@@ -37,7 +34,7 @@ function HomeCH(){
 
             <Grid className="subtext" item xs={12}>查看自行車道地圖，垃圾桶分佈，圖書館分佈，每小時天氣信息</Grid>
 
-        </Grid>
+        </div>
     )
 }
 

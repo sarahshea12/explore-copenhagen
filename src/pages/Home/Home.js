@@ -5,7 +5,7 @@ import "./Home.css";
 
 function Home(){
     return (
-        <Grid container spacing={3}>
+        <div style={{paddingTop: 56}}>
 
             <Grid 
             container
@@ -31,7 +31,7 @@ function Home(){
             </Grid>
             <Grid className="title" item xs={12}>København</Grid>
             <Grid className="subtext" item xs={12}><Link className="textLink" to="/map">Discover</Link> locations of waste baskets, local libraries，and hourly <Link className="textLink" to="/weather">weather</Link> data</Grid>
-        </Grid>
+        </div>
     )
 }
 

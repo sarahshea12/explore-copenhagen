@@ -5,7 +5,9 @@ import Map from "../components/Map";
 function MapPage(){
 
     return (
-        <Map />     
+        <div style={{paddingTop: 56}}>
+            <Map />
+        </div>    
     )
 }
 

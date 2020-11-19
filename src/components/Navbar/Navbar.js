@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Grid from "@material-ui/core/Grid";
+import { Grid, AppBar, Toolbar } from "@material-ui/core";
 import HomeIcon from "@material-ui/icons/Home";
 import CloudIcon from "@material-ui/icons/Cloud";
 import MapIcon from "@material-ui/icons/Explore";
@@ -9,17 +9,9 @@ import "./Navbar.css";
 
 function Nav(){
     return(
-        <Grid
-        className="container" 
-        container 
-        direction="row"
-        justify="flex-start"
-        alignItems="flex-start"
-        spacing={3}
-        >
-             
-            <Grid className="grid" item xs={12}>
-                <Link className="link" to="/">
+        <AppBar style={{background:"#0ba4e0"}} position="fixed">
+            <Toolbar>
+            <Link className="link" to="/">
                     <HomeIcon />
                 </Link>
 
@@ -30,9 +22,8 @@ function Nav(){
                 <Link className="link" to="/weather">
                     <CloudIcon />
                 </Link>
-            </Grid>
-
-        </Grid>    
+            </Toolbar>
+        </AppBar>  
     )
 }
 

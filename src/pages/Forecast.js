@@ -62,8 +62,8 @@ function Forecast(props) {
     };
 
     return (
-        <Grid container>
-            <Grid>
+        <div style={{paddingTop: 65}}>
+            <div>
                 <form noValidate autoComplete="off">
                 <TextField id="outlined-basic" label="Address" variant="outlined" 
                 value={address}
@@ -75,12 +75,12 @@ function Forecast(props) {
                 onClick={handleFormSubmit}
                 ><SearchIcon /></Button>
                 </form> 
-            </Grid>
+            </div>
 
-            <Grid>
+            <div>
                 <Chart data={data} />
-            </Grid>
-        </Grid>
+            </div>
+        </div>
     )
 }
 
