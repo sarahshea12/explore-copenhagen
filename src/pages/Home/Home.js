@@ -5,29 +5,15 @@ import "./Home.css";
 
 function Home(){
     return (
-        <div style={{paddingTop: 56}}>
+        <div style={{paddingTop: 75}}>
 
-            <div>
-                <Link className="language" to="/ch">中文</Link>
-            </div>
-
-            <Grid item xs={12}>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-            </Grid>
-
-            <Grid item xs={12}>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-            </Grid>
-            <Grid className="title" item xs={12}>København</Grid>
-            <Grid className="subtext" item xs={12}><Link className="textLink" to="/map">Discover</Link> locations of waste baskets, local libraries，and hourly <Link className="textLink" to="/weather">weather</Link> data</Grid>
+            <Link className="language" to="/ch">中文</Link>
+                   
+                
+        
+            <div className="title">København</div>
+            <div className="subtext"><Link className="textLink" to="/map">Discover</Link> locations of waste baskets, local libraries，and hourly <Link className="textLink" to="/weather">weather</Link> data</div>
+            
         </div>
     )
 }

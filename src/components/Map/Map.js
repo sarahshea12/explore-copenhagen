@@ -37,17 +37,17 @@ function Map(){
     const [selectedLib, setSelectedLib] = useState(null);
 
     return (
-    <div className="map" style={{paddingTop: 69}}>
+    <div className="map" style={{paddingTop: 68}}>
         <ReactMapGL 
         {...viewport}
         width="98vw"
-        height="90vh"
+        height="92vh"
         mapboxApiAccessToken={MAPBOX_TOKEN}
         mapStyle="mapbox://styles/sarahshea12/ckhilnhdj0j8019noz4pvtd33"
         onViewportChange = {nextViewport => setViewport(nextViewport)}
         >
     
-        <button onClick={bikeToggle}>Bikes</button>
+        <button className="mapButton" onClick={bikeToggle}>Bikes</button>
         {bikeIsToggled ? (
             <Source type="geojson" data={cycleData.default}>
             <Layer 
@@ -56,7 +56,6 @@ function Map(){
                 layout= {{
                     "line-cap": "round",
                     "line-join": "round",
-                    
                 }}
                 paint= {{
                     "line-color": "#ff02ff",
@@ -66,18 +65,21 @@ function Map(){
         </Source> 
         ) : null}
         
-        <button onClick={trashToggle}>Trashcans</button>
+        <button className="mapButton" onClick={trashToggle}>Trashcans</button>
         {trashIsToggled ? (
             <Source type="geojson" data={trashData.default}>
                 <Layer 
-                    id="marker"
-                    type="symbol"
-                    layout={{"icon-image": "marker-15"}}>
+                    id="circle"
+                    type="circle"
+                    paint={{
+                        "circle-radius": 3,
+                        "circle-color": "#000000"
+                    }}>
                 </Layer>
             </Source> 
         ) : null}
         
-        <button onClick={libToggle}>Libraries</button>
+        <button className="mapButton" onClick={libToggle}>Libraries</button>
         {libIsToggled ? (
         libraryData.default.features.map((lib) => (
         <Marker

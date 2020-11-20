@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Chart from "../components/Charts/Chart";
 import API from "../utils/API";
 import SearchIcon from "@material-ui/icons/Search";
-import { Grid, TextField, Button } from "@material-ui/core";
+import { TextField, Button } from "@material-ui/core";
 
 function Forecast(props) {
 
@@ -13,8 +13,6 @@ function Forecast(props) {
 
     function handleInputChange(event) {
         setAddress(event.target.value);
-        console.log(address);
-        
     }
 
     function handleFormSubmit(event) {
@@ -26,14 +24,12 @@ function Forecast(props) {
 
         API.getGeo(address)
             .then(res => {
-                console.log(res.data[0]);
+        
                 // changes state to the lat/lon of the location
                 let location = res.data[0].display_name;
                 lat = res.data[0].lat;
                 lon = res.data[0].lon;
                 setAddress(location)
-                console.log(location)
-                console.log(lat+" "+lon);
             })
             .then(results => {
 
@@ -52,8 +48,8 @@ function Forecast(props) {
                     nextNineHours.push({time: new Date(object[j].time).getHours()+":00", Celcius: object[j].data.instant.details.air_temperature, clouds: object[j].data.instant.details.cloud_area_fraction, Humidity: object[j].data.instant.details.relative_humidity, mm: object[j].data.next_1_hours.details.precipitation_amount});
                 }
         
+                // sets the prop data equal to this object
                 setData(nextNineHours);
-                console.log(data)
             });
             })
 
@@ -63,7 +59,8 @@ function Forecast(props) {
 
     return (
         <div style={{paddingTop: 65}}>
-            <div style={{float: "center"}}>
+
+            <div style={{position:"absolute", right:10}}>
                 <form noValidate autoComplete="off">
                 <TextField id="outlined-basic" label="Address" variant="outlined" 
                 value={address}
@@ -72,14 +69,17 @@ function Forecast(props) {
                 />
                 <Button
                 type="submit"
+                size="large"
                 onClick={handleFormSubmit}
-                ><SearchIcon /></Button>
+                ><SearchIcon />
+                </Button>
                 </form> 
             </div>
 
             <div>
                 <Chart data={data} />
             </div>
+
         </div>
     )
 }

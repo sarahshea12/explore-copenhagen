@@ -7,9 +7,11 @@ function HomeCH(){
     return (
         <div style={{paddingTop: 56}}>
             
-            <div>
-                <Link className="language" to="/">EN</Link>
-            </div>
+            <Grid
+                xs={12}
+                align="right"
+                className="language"
+                ><Link className="language" to="/">EN</Link></Grid>
 
             <Grid item xs={12}>
                 <br></br>

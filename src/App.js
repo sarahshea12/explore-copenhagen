@@ -3,31 +3,33 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Forecast from "./pages/Forecast";
 import Nav from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
-import MapPage from "./pages/MapPage";
 import Map from "./components/Map/Map";
 import HomeCH from "./pages/Home/HomeCH";
 import Grid from "@material-ui/core/Grid";
+import Paper from "@material-ui/core/Paper";
 
 function App() {
   return (
     <div>
-    <Grid 
+    {/* <Grid 
     container
     direction="row"
     justify="center"
     alignment="stretch"
     height="100%"
-    >
+    spacing={3}
+    > */}
       <Router basename="/explore-copenhagen">
       <div>
-        <Grid item xs={12}>
-          <Nav />
-        </Grid>
+        {/* <Grid item xs={12}> */}
+          <Paper><Nav /></Paper>
+          
+        {/* </Grid> */}
         
       </div>
 
       <div>
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}> */}
         <Switch>
           <Route exact path="/" render={() => (
             <Home />
@@ -50,12 +52,12 @@ function App() {
           </Route>
         </Switch>
 
-        </Grid>
+        {/* </Grid> */}
         </div>
 
       </Router>
 
-    </Grid>
+    {/* </Grid> */}
     </div>
   );
 }
