@@ -5,8 +5,8 @@ import "./Map.css";
 import * as trashData from "../data/trash.json";
 import * as libraryData from "../data/library.json";
 import * as cycleData from "../data/cycle.json";
-import { ButtonGroup, Button } from "@material-ui/core"
-import { DirectonsBike, ImportContacts, Delete } from "@material-ui/icons";
+import { Button } from "@material-ui/core"
+import { DirectionsBike, ImportContacts, Delete, LocalLibrary } from "@material-ui/icons";
 
 const MAPBOX_TOKEN = "pk.eyJ1Ijoic2FyYWhzaGVhMTIiLCJhIjoiY2toZmxuaDM4MHFvdzJwcXBxbDd0cnF0MyJ9.kkp2ulqhOdhgwysy05DlOA"
 
@@ -47,7 +47,7 @@ function Map(){
         onViewportChange = {nextViewport => setViewport(nextViewport)}
         >
     
-        <button className="mapButton" onClick={bikeToggle}>Bikes</button>
+        <button className="mapButton" onClick={bikeToggle}><DirectionsBike /></button>
         {bikeIsToggled ? (
             <Source type="geojson" data={cycleData.default}>
             <Layer 
@@ -65,7 +65,7 @@ function Map(){
         </Source> 
         ) : null}
         
-        <button className="mapButton" onClick={trashToggle}>Trashcans</button>
+        <button className="mapButton" onClick={trashToggle}><Delete /></button>
         {trashIsToggled ? (
             <Source type="geojson" data={trashData.default}>
                 <Layer 
@@ -79,7 +79,7 @@ function Map(){
             </Source> 
         ) : null}
         
-        <button className="mapButton" onClick={libToggle}>Libraries</button>
+        <button className="mapButton" onClick={libToggle}><LocalLibrary /></button>
         {libIsToggled ? (
         libraryData.default.features.map((lib) => (
         <Marker
@@ -90,7 +90,7 @@ function Map(){
                 onClick={(e) => {
                     e.preventDefault();
                     setSelectedLib(lib);
-                }}>{<ImportContacts />}</Button>
+                }}>{<LocalLibrary />}</Button>
         </Marker> 
         ))
         ) : null}

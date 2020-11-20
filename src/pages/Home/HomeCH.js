@@ -3,35 +3,15 @@ import Grid from "@material-ui/core/Grid";
 import { Link } from "react-router-dom";
 import "./Home.css";
 
-function HomeCH(){
+function HomeCH() {
     return (
-        <div style={{paddingTop: 56}}>
-            
-            <Grid
-                xs={12}
-                align="right"
-                className="language"
-                ><Link className="language" to="/">EN</Link></Grid>
+        <div style={{paddingTop: 68}}>
+    
+            <Link className="language" to="/">EN</Link>
 
-            <Grid item xs={12}>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-            </Grid>
+            <div className="title">哥本哈根</div>
 
-            <Grid item xs={12}>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-            </Grid>
-
-            <Grid className="title" item xs={12}>哥本哈根</Grid>
-
-            <Grid className="subtext" item xs={12}>查看自行車道地圖，垃圾桶分佈，圖書館分佈，每小時天氣信息</Grid>
+            <div className="subtext">查看自行車道地圖，垃圾桶分佈，圖書館分佈，每小時天氣信息</div>
 
         </div>
     )

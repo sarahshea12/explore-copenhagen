@@ -5,13 +5,12 @@ import "./Home.css";
 
 function Home(){
     return (
-        <div style={{paddingTop: 75}}>
+        <div style={{paddingTop: 68}}>
 
             <Link className="language" to="/ch">中文</Link>
-                   
-                
-        
+
             <div className="title">København</div>
+
             <div className="subtext"><Link className="textLink" to="/map">Discover</Link> locations of waste baskets, local libraries，and hourly <Link className="textLink" to="/weather">weather</Link> data</div>
             
         </div>
