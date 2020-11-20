@@ -1,5 +1,5 @@
 .title {
-    color: #0ba4e0;
+    color: #004256;
     padding: 10px 20px;
     text-align: center;
     font-family: 'Courier New', monospace;
@@ -10,7 +10,7 @@
     text-align: right;
     text-decoration: none;
     padding: 10px 20px;
-    color: #b500b5;
+    color: #8fc7cc;
     font-family: 'Times New Roman';
     font-size: 16px;
     font-weight: bold;
@@ -19,11 +19,11 @@
 }
 .textLink {
     text-decoration: none;
-    color: #b500b5;
+    color: #8fc7cc;
     size: 50px;
 }
 .language:hover, .language:active, .textLink:hover, .textLink:active {
-    color: #0ba4e0;
+    color: #e6d15e;
 }
 .subtext {
     text-align: center;

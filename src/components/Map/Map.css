@@ -6,6 +6,8 @@
     position: relative;
     right: 10;
     float: right;
+    padding: 10px;
+    background-color: white;
 }
 h4 {
     text-align: center;

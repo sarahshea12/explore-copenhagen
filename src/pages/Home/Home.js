@@ -11,7 +11,7 @@ function Home(){
 
             <div className="title">København</div>
 
-            <div className="subtext"><Link className="textLink" to="/map">Discover</Link> locations of waste bins, local libraries，and hourly <Link className="textLink" to="/weather">weather</Link> data</div>
+            <div className="subtext"><Link className="textLink" to="/map">Discover</Link> locations of bicycle paths, waste bins, local libraries，and hourly <Link className="textLink" to="/weather">weather</Link></div>
             
         </div>
     )

@@ -1,20 +1,18 @@
 .link:link, .link:visited {
-    background-color: #0cb0c6;
+    background-color: #004256;
     color: white;
     padding: 10px 20px;
     text-align: right;
     text-decoration: none;
     display: inline-block;
 }
-
 .link {
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
 }
-
 .link:hover, .link:active {
     background-color: white;
-    color: #0cb0c6;
+    color: #004256;
   }
 
 

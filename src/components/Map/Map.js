@@ -6,7 +6,7 @@ import * as trashData from "../data/trash.json";
 import * as libraryData from "../data/library.json";
 import * as cycleData from "../data/cycle.json";
 import { Button } from "@material-ui/core"
-import { DirectionsBike, ImportContacts, Delete, LocalLibrary } from "@material-ui/icons";
+import { DirectionsBike, Delete, LocalLibrary } from "@material-ui/icons";
 
 const MAPBOX_TOKEN = "pk.eyJ1Ijoic2FyYWhzaGVhMTIiLCJhIjoiY2toZmxuaDM4MHFvdzJwcXBxbDd0cnF0MyJ9.kkp2ulqhOdhgwysy05DlOA"
 
@@ -46,24 +46,6 @@ function Map(){
         mapStyle="mapbox://styles/sarahshea12/ckhilnhdj0j8019noz4pvtd33"
         onViewportChange = {nextViewport => setViewport(nextViewport)}
         >
-    
-        <button className="mapButton" onClick={bikeToggle}><DirectionsBike /></button>
-        {bikeIsToggled ? (
-            <Source type="geojson" data={cycleData.default}>
-            <Layer 
-                id="line"
-                type="line"
-                layout= {{
-                    "line-cap": "round",
-                    "line-join": "round",
-                }}
-                paint= {{
-                    "line-color": "#e2cb48",
-                    "line-width": 3
-                }}>
-            </Layer>
-        </Source> 
-        ) : null}
         
         <button className="mapButton" onClick={trashToggle}><Delete /></button>
         {trashIsToggled ? (
@@ -73,7 +55,7 @@ function Map(){
                     type="circle"
                     paint={{
                         "circle-radius": 3,
-                        "circle-color": "#000000"
+                        "circle-color": "#6f6f6f"
                     }}>
                 </Layer>
             </Source> 
@@ -90,10 +72,12 @@ function Map(){
                 onClick={(e) => {
                     e.preventDefault();
                     setSelectedLib(lib);
-                }}>{<LocalLibrary />}</Button>
+                    }}>{<LocalLibrary />}
+                </Button>
         </Marker> 
         ))
         ) : null}
+
         {selectedLib ? (
             <Popup 
                 latitude={selectedLib.geometry.coordinates[1]}
@@ -108,6 +92,24 @@ function Map(){
                     <h4>DK-{selectedLib.properties.post_nr}, {selectedLib.properties.postdistrikt}</h4>
                 </div>
             </Popup>
+        ) : null}
+
+        <button className="mapButton" onClick={bikeToggle}><DirectionsBike /></button>
+        {bikeIsToggled ? (
+            <Source type="geojson" data={cycleData.default}>
+                <Layer 
+                    id="line"
+                    type="line"
+                    layout= {{
+                        "line-cap": "round",
+                        "line-join": "round",
+                    }}
+                    paint= {{
+                        "line-color": "#e6d15e",
+                        "line-width": 3
+                    }}>
+                </Layer>
+            </Source> 
         ) : null}
         
         </ReactMapGL>
