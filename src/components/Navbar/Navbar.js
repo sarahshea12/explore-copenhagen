@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Grid, AppBar, Toolbar } from "@material-ui/core";
 import HomeIcon from "@material-ui/icons/Home";
-import CloudIcon from "@material-ui/icons/Cloud";
+import CloudIcon from "@material-ui/icons/CloudCircle";
 import MapIcon from "@material-ui/icons/Explore";
 
 import "./Navbar.css";
 
 function Nav(){
     return(
-        <AppBar style={{background:"#0ba4e0"}} position="fixed">
+        <AppBar style={{background:"#0cb0c6"}} position="fixed">
             <Toolbar>
             <Link className="link" to="/">
                     <HomeIcon />

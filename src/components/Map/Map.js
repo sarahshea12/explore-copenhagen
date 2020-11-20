@@ -58,7 +58,7 @@ function Map(){
                     "line-join": "round",
                 }}
                 paint= {{
-                    "line-color": "#ff02ff",
+                    "line-color": "#e2cb48",
                     "line-width": 3
                 }}>
             </Layer>
@@ -103,10 +103,9 @@ function Map(){
                 }}
                 >
                 <div>
-                    <h3>{selectedLib.properties.navn}</h3>
-                    <h3>{selectedLib.properties.adresse}</h3>
-                    <h3>DK-{selectedLib.properties.post_nr}, {selectedLib.properties.postdistrikt}</h3>
-                    <h3>{selectedLib.properties.link}</h3>
+                    <h4>{selectedLib.properties.navn}</h4>
+                    <h4>{selectedLib.properties.adresse}</h4>
+                    <h4>DK-{selectedLib.properties.post_nr}, {selectedLib.properties.postdistrikt}</h4>
                 </div>
             </Popup>
         ) : null}

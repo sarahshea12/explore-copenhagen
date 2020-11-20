@@ -10,6 +10,8 @@ function Forecast(props) {
     const [address, setAddress] = useState("");
     // props for data to be passed to Charts
     const [data, setData] = useState([]);
+    // prop for when the charts should populate, only when the search button is clicked
+    const [click, wasClicked] = useState(false);
 
     function handleInputChange(event) {
         setAddress(event.target.value);
@@ -50,6 +52,7 @@ function Forecast(props) {
         
                 // sets the prop data equal to this object
                 setData(nextNineHours);
+                wasClicked(true);
             });
             })
 
@@ -59,6 +62,8 @@ function Forecast(props) {
 
     return (
         <div style={{paddingTop: 65}}>
+
+            <div className="result">{address}</div>
 
             <div style={{position:"absolute", right:10}}>
                 <form noValidate autoComplete="off">
@@ -75,10 +80,10 @@ function Forecast(props) {
                 </Button>
                 </form> 
             </div>
-
-            <div>
-                <Chart data={data} />
-            </div>
+            
+            {click ? (
+                    <Chart data={data} />
+            ) : null}
 
         </div>
     )
